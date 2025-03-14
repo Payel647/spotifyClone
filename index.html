@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/logo.png" type="image/png">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+</head>
+
+<body>
+    <div class="main">
+        <div class="sidebar">
+          <div class="nav" >
+           <div class="nav-options" style="opacity: 1;">
+            <i class="fa-solid fa-house"></i>
+             <a href="#" >Home</a>
+           </div>
+           <div class="nav-options">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <a href="#">Search</a>
+          </div>
+
+          </div>
+          <div class="library">
+           <div class="options">
+              <div class="lib-options nav-options">
+                <img src="./assets/library_icon.png">
+                <a href="#">Your Library</a>
+              </div>
+              <div class="icons">
+                <i class="fa-solid fa-plus"></i>
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+           </div>
+           <div class="boxes">
+            <div class="box">
+              <p class="p1">
+                Create your first playlist
+
+              </p>
+              <p class="p2">
+                It's easy, we'll help you
+
+              </p>
+              <button class="badge">
+                Create playlist
+              </button>
+            </div>
+            <div class="box" style="height:9rem">
+              <p class="p1">
+                Let's find some podcasts to follow
+
+              </p>
+              <p class="p2">
+                We'll keep you updated on new episodes
+
+              </p>
+              <button class="badge">
+               Browse podcasts
+              </button>
+            </div>
+           
+            
+           </div>
+          </div>
+        </div>
+        <div class="main-content">
+
+         <div class="sticky-nav">
+          <div class="nav1">
+          <i class="fa-solid fa-less-than"></i>
+          <i class="fa-solid fa-greater-than"  id="GT"></i>
+        </div>
+        <div class="nav2">
+          <button class="badge hide" >
+            Explore Premium
+           </button>
+           <button class="badge2">
+            <i class="fa-regular fa-circle-down"></i>
+            Install App
+           </button>
+           <button class="badge2">
+            <i class="fa-regular fa-user"></i>
+           </button>
+          </div>
+
+         </div>
+         <div class="cards">
+          <h2>Recently played</h2>
+          <div class="card-container">
+            <div class="card">
+              <img src="./assets/card1img.jpeg" class="card-img">
+              <p class="card-title">
+                Liked Songs
+
+              </p>
+              <p class="card-info">
+                Songs liked by you..
+              </p>
+
+            </div>
+           
+
+          </div>
+          <h2>Trending now near you</h2>
+          <div class="card-container">
+            <div class="card">
+              <img src="./assets/card2img.jpeg" class="card-img">
+              <p class="card-title">
+                Top 50 - Global
+
+              </p>
+              <p class="card-info">
+                Your daily update of the most played tracks right..
+
+              </p>
+
+            </div>
+            <div class="card">
+              <img src="./assets/card3img.jpeg" class="card-img">
+              <p class="card-title">
+                Top 50 - Global
+
+              </p>
+              <p class="card-info">
+                Your daily update of the most played tracks right..
+
+              </p>
+
+            </div>
+
+            <div class="card">
+              <img src="./assets/card4img.jpeg" class="card-img">
+              <p class="card-title">
+                Top 50 - Global
+
+              </p>
+              <p class="card-info">
+                Your daily update of the most played tracks right..
+
+
+              </p>
+
+            </div>
+            <div class="card">
+              <img src="https://tse4.mm.bing.net/th?id=OIP.QkztoZ6tBDFAvdvz6z7P0QHaEK&pid=Api&P=0&h=180" class="card-img">
+              <p class="card-title">
+                Top 50 - Global
+
+
+
+              </p>
+              <p class="card-info">
+                Your daily update of the most played tracks right..
+
+
+
+              </p>
+
+            </div>
+
+            <div class="card">
+              <img src="https://tse2.mm.bing.net/th?id=OIP.evjK_joorqT1ZuFsQ8EZXQHaEK&pid=Api&P=0&h=180" class="card-img">
+              <p class="card-title">
+                Top 50 - Global
+              </p>
+              <p class="card-info">
+                Your daily update of the most played tracks right..
+
+
+
+              </p>
+
+            </div>
+
+
+
+          </div>
+
+
+
+         </div>
+         <h2>Spotify original & exclusive podcasts</h2>
+         <div class="card-container">
+           <div class="card">
+             <img src="./assets/card5img.jpeg" class="card-img">
+             <p class="card-title">
+               BRAINWASH
+             </p>
+             <p class="card-info">
+               Show . Radio City
+             </p>
+
+           </div>
+           <div class="card">
+            <img src="./assets/card6img.jpeg">
+            <p class="card-title">
+              This is BRUNO MARS
+
+            </p>
+            <p class="card-info">
+              Show . Bruno Mars
+
+            </p>
+
+          </div>
+          <div class="card">
+            <img src="./assets/card1img.jpeg" class="card-img">
+            <p class="card-title">
+              Art Design Music
+
+            </p>
+            <p class="card-info">
+              Show . Art Hub
+
+            </p>
+
+          </div>
+
+
+
+         </div>
+         <h2>Episodes for you</h2>
+         <div class="card-container">
+           <div class="card">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.a0Ilg7tSHMlDqsqUtcYV9gHaEK&pid=Api&P=0&h=180" class="card-img">
+            <p class="card-title">
+              Ep - Elon Musk
+
+            </p>
+            <p class="card-info">
+              Episode . THE JOE ROGAN EXPERIENCE
+            </p>
+
+          </div>
+          <div class="card">
+            <img src="https://tv-fanatic-res.cloudinary.com/iu/s--XpNYWBxV--/t_full/cs_srgb,f_auto,fl_strip_profile.lossy,q_auto:420/v1665804205/case-63-spotify-keyart.jpg" class="card-img">
+            <p class="card-title">
+              Case 63 - Episode 2
+
+            </p>
+            <p class="card-info">
+              Episode . CASE 63
+
+            </p>
+
+          </div>
+
+         </div>
+         <h2>Shows to try</h2>
+         <div class="card-container">
+           <div class="card">
+             <img src="https://tse2.mm.bing.net/th?id=OIP.A7fJwjsRQeS6dFNKeMKOXgHaHY&pid=Api&P=0&h=180" class="card-img">
+             <p class="card-title">
+              The Minstrel Show
+
+             </p>
+             <p class="card-info">
+              Show . Little Brother
+
+             </p>
+
+           </div>
+           <div class="card">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.764OfMqqYPr9IuKdOMlKZwHaHa&pid=Api&P=0&h=180" class="card-img">
+            <p class="card-title">
+              The Eminem Show
+
+            </p>
+            <p class="card-info">
+             Show . Eminem
+
+            </p>
+
+          </div>
+          <div class="card">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.O3FjAM8tQM4Y0QtyNbdwdgHaEK&pid=Api&P=0&h=180" class="card-img">
+            <p class="card-title">
+              COLORS
+
+            </p>
+            <p class="card-info">
+              Show . Different Heaven
+
+            </p>
+
+          </div>
+
+         </div>
+         <h2>Your favourite artists</h2>
+         <div class="card-container">
+           <div class="card">
+             <img src="https://tse1.mm.bing.net/th?id=OIP.oWk-7OyoiLSMv_m9yKF-KgHaFj&pid=Api&P=0&h=180" class="artist-img">
+             <p class="card-title">
+              Arijit Singh
+
+             </p>
+             <p class="card-info">
+               Artist
+
+             </p>
+
+           </div>
+           <div class="card">
+            <img src="https://i0.wp.com/urbanasian.com/wp-content/uploads/2016/07/snp1243.jpg?fit=1856%2C2784&ssl=1" class="artist-img">
+            <p class="card-title">
+             Sonu Nigam
+
+            </p>
+            <p class="card-info">
+              Artist
+
+            </p>
+
+          </div>
+
+          <div class="card">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.gjZhzm3H7KerUXzwiUcFXwHaHa&pid=Api&P=0&h=180" class="artist-img">
+            <p class="card-title">
+             Diljit Dosanjh
+
+            </p>
+            <p class="card-info">
+              Artist
+
+            </p>
+
+          </div>
+
+          <div class="card">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.YtADqXXd3lup8pS26Kg9uAHaHa&pid=Api&P=0&h=180" class="artist-img">
+            <p class="card-title">
+             Karan Aujla
+
+            </p>
+            <p class="card-info">
+              Artist
+
+            </p>
+
+          </div>
+
+
+         </div>
+         <h2>Popular albums</h2>
+         <div class="card-container">
+           <div class="card">
+             <img src="https://tse1.mm.bing.net/th?id=OIP._FG1nk9eE6dRbVJNhaj9agHaEK&pid=Api&P=0&h=180" class="card-img">
+             <p class="card-title">
+              Aesthetic Rainy Sad Nights
+             </p>
+             <p class="card-info">
+               Album . Aesthetic Songs
+             </p>
+
+           </div>
+           <div class="card">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.MpZg_dtWp0FMAjIBZE_ZMAHaHa&pid=Api&P=0&h=180" class="card-img">
+            <p class="card-title">
+              CHILL
+
+            </p>
+            <p class="card-info">
+              Album . Chill Mood
+
+            </p>
+
+          </div>
+          <div class="card">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.ZzqokJGvZm66Tlbz-zgdTwHaHa&pid=Api&P=0&h=180" class="card-img">
+            <p class="card-title">
+              LO-FI COVER
+            </p>
+            <p class="card-info">
+              Album . Lo-fi Song Covers
+
+            </p>
+
+          </div>
+          <div class="card">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.XB3hgxTT5XAj9nAXQvaTUwHaE5&pid=Api&P=0&h=180" class="card-img">
+            <p class="card-title">
+              New Music Friday
+
+            </p>
+            <p class="card-info">
+              Album . SLAY SELECTS
+
+            </p>
+
+          </div>
+
+         </div>
+         <h2>Featured Charts</h2>
+         <div class="card-container">
+           <div class="card">
+             <img src="https://tse1.mm.bing.net/th?id=OIP.Jjqb7mQxgQqBYg1QubAvngAAAA&pid=Api&P=0&h=180" class="card-img">
+             <p class="card-title">
+               Top 50 - India
+
+             </p>
+             <p class="card-info">
+               Listen to Top 50 Songs of India..
+
+             </p>
+
+           </div>
+           <div class="card">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.JPoR0qkoLIiQt3hM25irxwAAAA&pid=Api&P=0&h=180" class="card-img">
+            <p class="card-title">
+              Top 50 - South Korea
+
+            </p>
+            <p class="card-info">
+              Listen to Top 50 Songs of South Korea..
+
+            </p>
+
+          </div>
+          <div class="card">
+            <img src="https://cdns-images.dzcdn.net/images/playlist/a7362a0708b1810380440724503adaf7/500x500.jpg" class="card-img">
+            <p class="card-title">
+              Top Songs Global
+
+            </p>
+            <p class="card-info">
+              Listen to Top Global Songs..
+
+            </p>
+
+          </div>
+
+
+         </div>
+         <div class="footer">
+          <div class="line">
+            <div class="spotify-info" style="margin-top :4rem;">
+              <div class="info1">
+                <div class="txt1">Legal</div>
+                <div class="txt2">Safety & PrivacyCenter</div>
+                <div class="txt3">Privacy Policy</div>
+                <div class="txt4">Cookies</div>
+                <div class="txt5">About Ads</div>
+                <div class="txt6">Accessibility</div>
+              </div>
+              <div class="info2">
+                © 2024 Spotify AB
+              </div>
+            </div>
+
+          </div>
+         </div>
+        </div>
+        <div class="music-player">
+            <div class="albums">
+            <div class="album-img">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.pOLkF519tjrHGCSCjKbFYgHaEK&pid=Api&P=0&h=180">
+            </div>
+            <div class="album-info">
+              <p class="albump1">
+                Daylight
+              </p>
+              <p class="albump2">
+                David Kushner
+              </p>
+            </div>
+            <div class="album-icons">
+              <div class="album-icon-1">
+                <i class="fa-regular fa-heart" id="album1"></i>
+
+              </div>
+              <div class="album-icon-2">
+                
+                <i class="fa-solid fa-circle-plus"></i>
+              </div>
+
+            </div>
+            </div>
+            <div class="player">
+              <div class="player-controls">
+                <i class="fa-solid fa-shuffle" id="playcontrol-icon1"></i>
+                <i class="fa-solid fa-backward-step" id="playcontrol-icon2"></i>
+                <i class="fa-solid fa-circle-play" id="playcontrol-icon3"></i>
+                <i class="fa-solid fa-forward-step" id="playcontrol-icon4"></i>
+                <i class="fa-solid fa-repeat" id="playcontrol-icon5"></i>
+              </div>
+              <div class="playback-bar">
+                <span class="currtime">00:00</span>
+                
+                <input type="range" min="0" max="100" class="progress" step="1" style="height: 2rem;">
+                <span class="tot-time">3:33</span>
+
+
+              </div>
+
+            </div>
+            <div class="controls">
+              <span class="rectangle"id="control1">
+                <i class="fas fa-play" ></i>
+              </span>
+            <i class="fa-solid fa-microphone-lines" id="control2"></i>
+            <span class="queue-icon" id="control3">
+              <div class="queue-rect"></div>
+              
+              <div class="queue-line" ></div>
+              <div class="queue-line"></div>
+              
+            </span>
+            <i class="fa-solid fa-tablet-screen-button" id="control4"></i>
+            <span class="vol" id="control5">
+              <i class="fa-solid fa-volume-low"  id="vol"></i>
+              <input type="range" min="0" max="100" class="progress" step="1" style="height: 2rem; width: 80%; " >
+            </span>
+            <i class="fa-regular fa-square-minus" id="control6"></i>
+            <i class="fa-solid fa-up-right-and-down-left-from-center" id="control7"></i>
+
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>
